@@ -1,4 +1,6 @@
 #include "eje2.h"
+#include <iostream>
+#include <string>
 using namespace std;
 void eje2() {
 //2.- Escribe un programa que pida tres números y muestre la media aritmética de esos tres números.

@@ -1,75 +1,54 @@
+// main.cpp
 #include <iostream>
-#include <string>
-#include <cmath>
+#include "eje1/eje1.h"
+#include "eje2/eje2.h"
+#include "eje3/eje3.h"
+#include "eje4/eje4.h"
+#include "eje5/eje5.h"
+#include "eje6/eje6.h"
+#include "eje7/eje7.h"
+#include "eje8/eje8.h"
+#include "eje9/eje9.h"
 
 using namespace std;
 
 int main() {
+    int opcion;
+    cout << "Introduce el número del ejercicio que quieres ejecutar del 1 al 9" << endl;
+    cin >> opcion;
 
-
-
-
-
-
-    //4.- Escribir un programa que calcule el área de un rectángulo, a partir de la longitud de los lados del rectángulo que introduce el usuario.
-    int base;
-    int altura;
-    cout << "Introduce la base y la altura del rectángulo" << endl;
-    cin >> base;
-    cin >> altura;
-    cout << "El área del rectángulo es " << base * altura << endl;
-
-    //5.- Escribir un programa que lea a través del teclado dos cadenas de caracteres y muestre como resultado si ambas cadenas son iguales o no lo son.
-    string cadena1;
-    string cadena2;
-    cout << "Introduce dos cadenas de caracteres" << endl;
-    cin >> cadena1;
-    cin >> cadena2;
-    if (cadena1 == cadena2) {
-        cout << "Las cadenas son iguales" << endl;
-    } else {
-        cout << "Las cadenas no son iguales" << endl;
+    switch (opcion) {
+        case 1:
+            eje1();
+            break;
+        case 2:
+            eje2();
+            break;
+        case 3:
+            eje3();
+            break;
+        case 4:
+            eje4();
+            break;
+        case 5:
+            eje5();
+            break;
+        case 6:
+            eje6();
+            break;
+        case 7:
+            eje7();
+            break;
+        case 8:
+            eje8();
+            break;
+        case 9:
+            eje9();
+            break;
+        default:
+            cout << "Opción no válida" << endl;
+            break;
     }
-
-    //6.- Escribir un programa que calcule la longitud de la hipotenusa de un triángulo rectángulo, utilizando el teorema de Pitágoras.
-    cout << "Introduce los catetos del triángulo rectángulo" << endl;
-    double cateto1;
-    double cateto2;
-    cin >> cateto1;
-    cin >> cateto2;
-    double hipotenusa = sqrt(cateto1 * cateto1 + cateto2 * cateto2);
-    cout << "La hipotenusa es " <<hipotenusa << endl;
-
-    //7.- Escribir un programa que resuelva ecuaciones de primer grado de la forma Ax+B=C. Los valores de A, B y C se introducen por teclado
-    cout << "Introduce los valores de A, B y C para resolver Ax+B=C" << endl;
-    double A;
-    double B;
-    double C;
-    cin >> A;
-    cin>> B;
-    cin >> C;
-    double x = (C - B) / A;
-    cout << "El valor de x es " << x << endl;
-
-    //8.- Escribir un programa que calcule el precio final de un producto en euros (incluyendo el iva del 21%) a partir del precio del producto, que se introduce por teclado.
-    cout << "Introduce el precio del producto sin IVA" << endl;
-    double precio;
-    cin >> precio;
-    double iva = 0.21;
-    cout << "El precio final del producto es " << precio * (1+iva) << endl;
-
-    //9.- Escribir un programa que simule una calculadora sencilla. El programa pedirá dos números y calculará la suma, la resta, la multiplicación y la división de ambos.
-    cout << "Introduce dos números" << endl;
-    double num1;
-    double num2;
-    cin >> num1;
-    cin >> num2;
-    cout << "La suma de los números es " << num1 + num2 << endl;
-    cout << "La resta de los números es " << num1 - num2 << endl;
-    cout << "La multiplicación de los números es " << num1 * num2 << endl;
-    cout << "La división de los números es " << num1 / num2 << endl;
-
-
 
     return 0;
 }
